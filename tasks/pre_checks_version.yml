@@ -18,6 +18,8 @@
     url: "{{ k3s_api_releases }}"
     return_content: true
     body_format: json
+    headers: 
+      Accept: application/json
   register: k3s_latest_release
   check_mode: false
 
